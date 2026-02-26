@@ -14,7 +14,7 @@ logging.basicConfig(
 @app.route("/")
 def home():
     logging.info("Home endpoint accessed")
-    return jsonify({"message": "Welcome to LogiSafe"})
+    return jsonify({"message": "Welcome to LogiSafe v2"})
 
 @app.route("/health")
 def health():
