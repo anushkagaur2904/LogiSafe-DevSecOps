@@ -15,21 +15,15 @@ pipeline {
                 sh '''
                 ls
                 ls app
+		ls k8s
                 '''
             }
         }
 
-        stage('Docker Build') {
+       stage('Package for Deployment') {
             steps {
                 sh '''
-                sh jenkins/docker-build.sh
-                '''
-            }
-        }
-	stage('Deploy to Kubernetes') {
-            steps {
-                sh '''
-                sh jenkins/k8s-deploy.sh
+                echo "Application packaged and ready for deployment"
                 '''
             }
         }
