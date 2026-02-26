@@ -13,17 +13,17 @@ pipeline {
         stage('Verify Project Structure') {
             steps {
                 sh '''
-                echo "Checking project structure"
                 ls
                 ls app
                 '''
             }
         }
 
-        stage('Basic Validation') {
+        stage('Docker Build') {
             steps {
                 sh '''
-                echo "CI pipeline executed successfully"
+                echo "Building Docker image for LogiSafe"
+                sh jenkins/docker-build.sh
                 '''
             }
         }
