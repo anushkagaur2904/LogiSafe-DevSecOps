@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logisafe-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: logisafe
+  template:
+    metadata:
+      labels:
+        app: logisafe
+    spec:
+      containers:
+      - name: logisafe-container
+        image: logisafe-app
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5001
