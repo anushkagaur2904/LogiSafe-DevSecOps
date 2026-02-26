@@ -22,8 +22,14 @@ pipeline {
         stage('Docker Build') {
             steps {
                 sh '''
-                echo "Building Docker image for LogiSafe"
                 sh jenkins/docker-build.sh
+                '''
+            }
+        }
+	stage('Deploy to Kubernetes') {
+            steps {
+                sh '''
+                sh jenkins/k8s-deploy.sh
                 '''
             }
         }
