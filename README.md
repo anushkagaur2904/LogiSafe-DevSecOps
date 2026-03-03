@@ -37,21 +37,20 @@ Click the "Log Injection" button 4 times rapidly.
 
 The UI will trigger a CRITICAL alert status, and the backend will return an HTTP 429 (Too Many Requests) status code.
 
-Inspecting the Audit Trail
+<b>Inspecting the Audit Trail</b>
 The persistent logs are stored in security.log in the root directory. This file remains intact even if the Docker container is destroyed, demonstrating Data Persistence.
 
 <h1>📊 API Reference
 </h1>
-GET /: Serves the SOC Dashboard.
+<b>GET /:</b> Serves the SOC Dashboard.
 
-GET /health: System diagnostic and heartbeat endpoint.
+<b>GET /health:</b> System diagnostic and heartbeat endpoint.
 
-GET /simulate: Triggers a security incident (protected by Rate Limiter).
+<b>GET /simulate:</b> Triggers a security incident (protected by Rate Limiter).
 
-GET /download-logs: Serves the security.log as a downloadable attachment.
+<b>GET /download-logs: </b>Serves the security.log as a downloadable attachment.
 
-POST /clear-logs: Sanitizes the audit trail and records a system-wide purge.
-
+<b>POST /clear-logs: </b>Sanitizes the audit trail and records a system-wide purge.
 
 | Member           | Responsibility                   |
 | ---------------- | -------------------------------- |
