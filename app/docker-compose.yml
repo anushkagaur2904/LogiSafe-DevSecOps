@@ -1,0 +1,9 @@
+services:
+  logisafe:
+    build: .
+    container_name: logisafe_sentinel
+    ports:
+      - "5001:5001"
+    restart: always
+    environment:
+      - FLASK_ENV=production
