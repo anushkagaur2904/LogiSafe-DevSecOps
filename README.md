@@ -1,4 +1,4 @@
-🛡️ LogiSafe Sentinel
+<h1>🛡️ LogiSafe Sentinel</h1>
 Ultra Containerized Security Operations Center (SOC) Simulator
 
 LogiSafe Sentinel is a high-performance microservice designed to demonstrate real-world security monitoring, incident response, and resource protection. It features a Python Flask engine and a Real-time Vanilla JS dashboard, all orchestrated within a Docker environment.
