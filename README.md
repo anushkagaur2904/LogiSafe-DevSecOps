@@ -17,17 +17,14 @@ LogiSafe Sentinel is a high-performance microservice designed to demonstrate rea
 
 
 <h1>🛠️ Technical Architecture</h1>
-<table>
-  | **Layer**   | **Technology**           | **Function**                           |
+
+| **Layer**   | **Technology**           | **Function**                           |
 | ----------- | ------------------------ | -------------------------------------- |
 | Backend     | Python 3.10 / Flask      | RESTful Security Engine                |
 | Frontend    | HTML5 / CSS3 / ES6+      | Real-time SOC Dashboard                |
 | Security    | Sliding Window Algorithm | DDoS / Rate Limit Protection           |
 | Persistence | Docker Volumes           | Host-to-Container Data Synchronization |
 | DevOps      | Docker Compose           | Microservice Orchestration             |
-
-</table>
-
 
 <h1>🧪 Security Testing (QA)</h1>
 <h2>Triggering a DDoS Alert
