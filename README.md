@@ -1,10 +1,10 @@
 <h1>🛡️ LogiSafe Sentinel</h1>
-Ultra Containerized Security Operations Center (SOC) Simulator
-
+<h2>Ultra Containerized Security Operations Center (SOC) Simulator
+</h2>
 LogiSafe Sentinel is a high-performance microservice designed to demonstrate real-world security monitoring, incident response, and resource protection. It features a Python Flask engine and a Real-time Vanilla JS dashboard, all orchestrated within a Docker environment.
 
 
-🚀 Advanced Features
+<h1>🚀 Advanced Features</h1>
 DDoS Mitigation (Rate Limiting): Implements a sliding-window algorithm to detect and throttle high-frequency request bursts.
 
 Real-Time Heartbeat: Asynchronous polling of the /health endpoint to monitor engine stability and latency.
@@ -16,7 +16,7 @@ Data Lifecycle Suite: Integrated tools for Incident Generation, Audit Exporting,
 SOC UI: A professional, SVG-enhanced dashboard supporting both Dark and Light modes for administrative flexibility.
 
 
-🛠️ Technical Architecture
+<h1>🛠️ Technical Architecture</h1>
 | **Layer**   | **Technology**           | **Function**                           |
 | ----------- | ------------------------ | -------------------------------------- |
 | Backend     | Python 3.10 / Flask      | RESTful Security Engine                |
@@ -26,8 +26,9 @@ SOC UI: A professional, SVG-enhanced dashboard supporting both Dark and Light mo
 | DevOps      | Docker Compose           | Microservice Orchestration             |
 
 
-🧪 Security Testing (QA)
-Triggering a DDoS Alert
+<h1>🧪 Security Testing (QA)</h1>
+<h2>Triggering a DDoS Alert
+</h2>
 The system is configured to allow 3 requests per 5 seconds. To test the Rate Limiter:
 
 Navigate to the dashboard.
@@ -39,8 +40,8 @@ The UI will trigger a CRITICAL alert status, and the backend will return an HTTP
 Inspecting the Audit Trail
 The persistent logs are stored in security.log in the root directory. This file remains intact even if the Docker container is destroyed, demonstrating Data Persistence.
 
-
-📊 API Reference
+<h1>📊 API Reference
+</h1>
 GET /: Serves the SOC Dashboard.
 
 GET /health: System diagnostic and heartbeat endpoint.
