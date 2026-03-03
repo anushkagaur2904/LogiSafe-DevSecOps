@@ -5,15 +5,15 @@ LogiSafe Sentinel is a high-performance microservice designed to demonstrate rea
 
 
 <h1>🚀 Advanced Features</h1>
-DDoS Mitigation (Rate Limiting): Implements a sliding-window algorithm to detect and throttle high-frequency request bursts.
+<b>DDoS Mitigation (Rate Limiting):</b> Implements a sliding-window algorithm to detect and throttle high-frequency request bursts.
 
-Real-Time Heartbeat: Asynchronous polling of the /health endpoint to monitor engine stability and latency.
+<b>Real-Time Heartbeat:</b> Asynchronous polling of the /health endpoint to monitor engine stability and latency.
 
-Persistent Audit Trail: State-of-the-art logging using Python's logging library, synchronized to the host machine via Docker Volumes.
+<b>Persistent Audit Trail: </b>State-of-the-art logging using Python's logging library, synchronized to the host machine via Docker Volumes.
 
-Data Lifecycle Suite: Integrated tools for Incident Generation, Audit Exporting, and Cryptographic Purging (Log Sanitization).
+<b>Data Lifecycle Suite:</b> Integrated tools for Incident Generation, Audit Exporting, and Cryptographic Purging (Log Sanitization).
 
-SOC UI: A professional, SVG-enhanced dashboard supporting both Dark and Light modes for administrative flexibility.
+<b>SOC UI:</b> A professional, SVG-enhanced dashboard supporting both Dark and Light modes for administrative flexibility.
 
 
 <h1>🛠️ Technical Architecture</h1>
