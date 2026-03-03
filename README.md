@@ -43,9 +43,13 @@ The persistent logs are stored in security.log in the root directory. This file 
 <h1>📊 API Reference
 </h1>
 <b>GET /:</b> Serves the SOC Dashboard.
+
 <b>GET /health:</b> System diagnostic and heartbeat endpoint.
+
 <b>GET /simulate:</b> Triggers a security incident (protected by Rate Limiter).
+
 <b>GET /download-logs: </b>Serves the security.log as a downloadable attachment.
+
 <b>POST /clear-logs: </b>Sanitizes the audit trail and records a system-wide purge.
 
 | Member           | Responsibility                   |
